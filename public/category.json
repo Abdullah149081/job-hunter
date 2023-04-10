@@ -1,0 +1,22 @@
+[
+  {
+    "category_logo": "https://example.com/category1.png",
+    "category_name": "Software Development",
+    "jobs_available": 500
+  },
+  {
+    "category_logo": "https://example.com/category2.png",
+    "category_name": "Data Science",
+    "jobs_available": 250
+  },
+  {
+    "category_logo": "https://example.com/category3.png",
+    "category_name": "Marketing",
+    "jobs_available": 400
+  },
+  {
+    "category_logo": "https://example.com/category4.png",
+    "category_name": "Design",
+    "jobs_available": 300
+  }
+]
