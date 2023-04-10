@@ -12,10 +12,8 @@
     "job_responsibility": "Develop and maintain web applications using Python and JavaScript.",
     "educational_requirements": "Bachelor's degree in Computer Science or related field.",
     "experiences": "3+ years of experience in software engineering.",
-    "contact_information": {
-      "phone": "123-456-7890",
-      "email": "jobs@abccorporation.com"
-    }
+    "phone": "123-456-7890",
+    "email": "jobs@abccorporation.com"
   },
   {
     "id": 2,
@@ -30,10 +28,8 @@
     "job_responsibility": "Analyze and interpret data, develop reports and provide insights for various departments.",
     "educational_requirements": "Bachelor's degree in Statistics, Economics or related field.",
     "experiences": "2+ years of experience in data analytics.",
-    "contact_information": {
-      "phone": "555-123-4567",
-      "email": "jobs@xyzinc.com"
-    }
+    "phone": "555-123-4567",
+    "email": "jobs@xyzinc.com"
   },
   {
     "id": 3,
@@ -48,10 +44,8 @@
     "job_responsibility": "Develop and execute marketing strategies, manage campaigns, and coordinate with teams.",
     "educational_requirements": "Bachelor's degree in Marketing, Business Administration or related field.",
     "experiences": "5+ years of experience in marketing.",
-    "contact_information": {
-      "phone": "888-555-1234",
-      "email": "jobs@123enterprises.com"
-    }
+    "phone": "888-555-1234",
+    "email": "jobs@123enterprises.com"
   },
   {
     "id": 4,
@@ -66,10 +60,8 @@
     "job_responsibility": "Create designs for marketing materials including website, social media, and print materials.",
     "educational_requirements": "Bachelor's degree in Graphic Design or related field.",
     "experiences": "3+ years of experience in graphic design.",
-    "contact_information": {
-      "phone": "555-555-5555",
-      "email": "jobs@designco.com"
-    }
+    "phone": "555-555-5555",
+    "email": "jobs@designco.com"
   },
   {
     "id": 5,
@@ -84,10 +76,8 @@
     "job_responsibility": "Oversee and manage the HR department, develop and implement HR policies and procedures.",
     "educational_requirements": "Bachelor's degree in Human Resources, Business Administration or related field.",
     "experiences": "7+ years of experience in human resources.",
-    "contact_information": {
-      "phone": "888-555-1234",
-      "email": "jobs@globalcorp.com"
-    }
+    "phone": "888-555-1234",
+    "email": "jobs@globalcorp.com"
   },
   {
     "id": 6,
@@ -102,9 +92,7 @@
     "job_responsibility": "Identify and develop new business opportunities, manage sales pipeline, and maintain relationships with clients.",
     "educational_requirements": "Bachelor's degree in Business, Marketing or related field.",
     "experiences": "2+ years of experience in sales.",
-    "contact_information": {
-      "phone": "555-555-5555",
-      "email": "jobs@salesco.com"
-    }
+    "phone": "555-555-5555",
+    "email": "jobs@salesco.com"
   }
 ]
