@@ -1,8 +1,14 @@
 import React from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import { Link, useNavigate } from "react-router-dom";
 
 const FeaturedJobs = ({ job }) => {
-  const { company_logo, job_title, company_name, remote_or_onsite, fulltime_or_parttime, salary, location } = job;
+  const { id, company_logo, job_title, company_name, remote_or_onsite, fulltime_or_parttime, salary, location } = job;
+  const navigate = useNavigate();
+  const handlerJobDetails = () => {
+    navigate(`/jobDetails/${id}`);
+  };
+
   return (
     <div className="border rounded-sm py-10 pl-10">
       <img className="w-64  h-20 object-cover" src={company_logo} alt="" />
@@ -19,7 +25,10 @@ const FeaturedJobs = ({ job }) => {
           </span>
           <span className="location_salary">Salary : {salary}</span>
         </p>
-      <button className="btn font-bold">View Details</button>
+
+        <button onClick={handlerJobDetails} className="btn font-bold">
+          View Details
+        </button>
       </div>
     </div>
   );

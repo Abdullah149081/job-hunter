@@ -7,12 +7,18 @@ import Category from "../Category/Category";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 
 const Home = () => {
-  const category = useLoaderData();
+  const [category, setCategory] = useState([]);
   const [jobs, setJobs] = useState([]);
   useEffect(() => {
     fetch("jobs.json")
       .then((res) => res.json())
       .then((data) => setJobs(data));
+  }, []);
+
+  useEffect(() => {
+    fetch("category.json")
+      .then((res) => res.json())
+      .then((data) => setCategory(data));
   }, []);
 
   return (
