@@ -11,3 +11,12 @@
 .btn {
   @apply py-5 px-7 text-white bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-violet-500 hover:to-indigo-500 rounded-lg;
 }
+.text-g {
+  @apply bg-gradient-to-r from-indigo-500 to-violet-500 text-transparent  bg-clip-text;
+}
+.remote_or_fulltime {
+  @apply border border-indigo-500 rounded px-4 py-2 mr-4;
+}
+.location_salary{
+  @apply inline-flex justify-center items-center gap-4
+}
