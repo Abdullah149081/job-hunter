@@ -2,27 +2,32 @@ import React, { useEffect, useState } from "react";
 import { HiCurrencyDollar, HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
 import { HiCalendarDays, HiOutlinePhone } from "react-icons/hi2";
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToDb } from "../../utilities/fakedb";
 
 const JobDetails = () => {
   const [details, setDetails] = useState({});
-  const id = useParams();
+  const detail = useParams();
   const jobs = useLoaderData();
+  const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, phone, email, location, id } = details;
+
+  const setLocalStorage = (id) => {
+    addToDb(id);
+  };
 
   useEffect(() => {
     if (jobs) {
-      const findJob = jobs.find((job) => job.id == id.Id);
+      const findJob = jobs.find((job) => job.id === detail.Id);
       setDetails(findJob);
     }
   }, []);
-  const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, phone, email, location } = details;
 
   return (
     <div className="px-4 py-16  md:px-24 lg:px-28 lg:py-20">
       <h2 className="text-center text-4xl font-bold text-gray-900">Job Details</h2>
       {/* flex  */}
-      <div className="lg:mt-36 mt-12 flex flex-col md:flex-row gap-12">
+      <div className="lg:mt-36 mt-12 flex flex-col md:flex-row gap-12 lg:px-40">
         {/* job  */}
-        <div className="space-y-7 text-lg ">
+        <div className="space-y-7 text-lg lg:w-2/3 ">
           <p>
             <span className="font-bold text-">Job Description:</span> <span className="text-zinc-500 font-semibold">{job_description}</span>
           </p>
@@ -63,7 +68,9 @@ const JobDetails = () => {
             </p>
           </div>
 
-          <button className="btn">Apply Now</button>
+          <button onClick={() => setLocalStorage(id)} className="btn">
+            Apply Now
+          </button>
         </div>
       </div>
     </div>
