@@ -1,21 +1,21 @@
 [
   {
-    "category_logo": "https://example.com/category1.png",
+    "category_logo": "https://static.vecteezy.com/system/resources/previews/006/173/028/original/computer-repair-logo-template-computer-pixels-logo-software-development-design-free-vector.jpg",
     "category_name": "Software Development",
     "jobs_available": 500
   },
   {
-    "category_logo": "https://example.com/category2.png",
+    "category_logo": "https://static.vecteezy.com/system/resources/previews/006/020/770/original/brain-tech-mind-data-logo-free-vector.jpg",
     "category_name": "Data Science",
     "jobs_available": 250
   },
   {
-    "category_logo": "https://example.com/category3.png",
+    "category_logo": "https://images-platform.99static.com//y50FdI4Or7filffZ5qSXAn5YMTI=/0x0:2000x2000/fit-in/500x500/projects-files/71/7131/713106/ec5bd3a0-f210-4729-ae13-51241c5657eb.jpg",
     "category_name": "Marketing",
     "jobs_available": 400
   },
   {
-    "category_logo": "https://example.com/category4.png",
+    "category_logo": "https://global-uploads.webflow.com/5e157548d6f7910beea4e2d6/6388f719127865e901c628fa_graphic-design-free-logo-generator.png",
     "category_name": "Design",
     "jobs_available": 300
   }
