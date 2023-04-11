@@ -9,7 +9,6 @@ const AppliedDetails = ({ applied }) => {
     navigate(`/jobDetails/${id}`);
   };
 
-  console.log(applied);
   return (
     <div className="border rounded-sm py-10 px-6 mt-7">
       <div className="flex justify-between items-center flex-col lg:flex-row">

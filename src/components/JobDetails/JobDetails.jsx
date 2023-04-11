@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 import { HiCurrencyDollar, HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
 import { HiCalendarDays, HiOutlinePhone } from "react-icons/hi2";
 import { useLoaderData, useParams } from "react-router-dom";
-import { addToDb } from "../../utilities/fakedb";
+import { addToDb, getShoppingCart } from "../../utilities/fakedb";
 
 const JobDetails = () => {
   const [details, setDetails] = useState({});
@@ -12,7 +12,15 @@ const JobDetails = () => {
   const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, phone, email, location, id } = details;
 
   const setLocalStorage = (id) => {
-    toast.success("congratulation  You're successfully applied job");
+    const existsApplied = getShoppingCart();
+    if (existsApplied) {
+      for (const job in existsApplied) {
+        if (job === id) {
+          toast.error("You have already applied for this job", { duration: 1000 });
+        }
+      }
+    }
+
     addToDb(id);
   };
 
