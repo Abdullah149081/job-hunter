@@ -12,6 +12,14 @@ const Blog = () => {
             grandparent to child to parent.
           </p>
         </div>
+        {/* Q-2 */}
+        <div class="space-y-4 border-2 p-4 border-dotted rounded-lg border-indigo-500">
+          <h2 class="lg:text-2xl font-bold">2. What is a custom hook??</h2>
+          <p class="text-gray-700 font-medium lg:text-xl">
+            As a result of using custom hook, we can reuse the code, which increases the readability of the code, as a result, many complex problems can be solved, when the same work or same code
+            needs to be written repeatedly, we can solve this problem by using custom hook. (use) should be written at the beginning.
+          </p>
+        </div>
       </div>
     </div>
   );
