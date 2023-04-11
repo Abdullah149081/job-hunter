@@ -50,7 +50,7 @@ const Home = () => {
         </div>
       </div>
       {/* Featured Jobs */}
-      <div className="mt-32">
+      <div className="mt-32 pb-32">
         <h2 className="text-center text-5xl font-bold mb-5">Featured Jobs</h2>
         <p className="text-center text-stone-500">Explore thousands of job opportunities with all the information you need. Its your future</p>
         <div className="grid lg:grid-cols-2 mt-32 gap-6">
