@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-import Lottie from "lottie-react";
-import { useLoaderData } from "react-router-dom";
-import reader from "../../assets/129467-job-hunting.json";
+import man from "../../assets/man.png";
 import Category from "../Category/Category";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 
@@ -11,13 +8,13 @@ const Home = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    fetch("category.json")
+    fetch("/category.json")
       .then((res) => res.json())
       .then((data) => setCategory(data));
   }, []);
 
   useEffect(() => {
-    fetch("jobs.json")
+    fetch("/jobs.json")
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
@@ -36,8 +33,8 @@ const Home = () => {
           <button className="btn font-bold">Get Started</button>
         </div>
         <div className="lg:w-1/2 ">
-          <div className="w-full lg:w-4/5 lg:ml-auto ">
-            <Lottie animationData={reader} loop={true} />
+          <div className="w-full lg:w-4/5 lg:ml-auto  mt-10 lg:mt-0">
+            <img src={man} alt="" />
           </div>
         </div>
       </div>
