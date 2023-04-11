@@ -5,35 +5,35 @@ import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YA
 const Statistics = () => {
   const assignment = [
     {
-      name: "Assignment 1",
+      name: "A1",
       mark: 60,
     },
     {
-      name: "Assignment 2",
+      name: "A2",
       mark: 60,
     },
     {
-      name: "Assignment 3",
+      name: "A3",
       mark: 60,
     },
     {
-      name: "Assignment 4",
+      name: "A4",
       mark: 60,
     },
     {
-      name: "Assignment 5",
+      name: "A5",
       mark: 60,
     },
     {
-      name: "Assignment 6",
+      name: "A6",
       mark: 59,
     },
     {
-      name: "Assignment 7",
+      name: "A7",
       mark: 60,
     },
     {
-      name: "Assignment 8",
+      name: "A8",
       mark: 60,
     },
   ];

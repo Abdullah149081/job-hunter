@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import applyJobsLoader from "./applyJobsLoader/applyJobsLoader";
 import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
+import Blog from "./components/Blog/Blog";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Home from "./components/Home/Home";
 import JobDetails from "./components/JobDetails/JobDetails";
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
         path: "applied-jobs",
         element: <AppliedJobs></AppliedJobs>,
         loader: applyJobsLoader,
+      },
+      {
+        path: "blog",
+        element: <Blog></Blog>,
       },
     ],
   },
