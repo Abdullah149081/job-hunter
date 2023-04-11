@@ -15,7 +15,7 @@ export default function ErrorPage() {
           </div>
           <div className="space-y-4 mb-4">
             <h2 className="text-2xl font-bold m-0 uppercase text-[#232323]">Oops! Page Not Be Found</h2>
-            <p className="text-error font-medium text-2xl">
+            <p className=" text-red-500 font-medium text-2xl">
               <i>{error?.statusText || error?.message}</i>
             </p>
           </div>
