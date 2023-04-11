@@ -13,11 +13,10 @@ const JobDetails = () => {
 
   const setLocalStorage = (id) => {
     const existsApplied = getShoppingCart();
-    if (existsApplied) {
-      for (const job in existsApplied) {
-        if (job === id) {
-          toast.error("You have already applied for this job", { duration: 1000 });
-        }
+
+    for (const job in existsApplied) {
+      if (job === id) {
+        toast.error("You have already applied for this job", { duration: 1000 });
       }
     }
 
