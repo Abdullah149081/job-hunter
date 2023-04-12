@@ -28,6 +28,14 @@ const Blog = () => {
             elements directly.Implementing a stopwatch,focus on an input.
           </p>
         </div>
+        {/* Q -4 */}
+        <div class="space-y-4 border-2 p-4 border-dotted rounded-lg border-indigo-500">
+          <h2 class="lg:text-2xl font-bold">3. What is useMemo ?</h2>
+          <p class="text-gray-700 font-medium lg:text-xl">
+            useMemo is a React hook that allows you to cache the result of a calculation between re-renders. This means useMemo() to prevent unnecessary re-rendering so that one blocking doesn't
+            damage another. Application performance can be enhanced when this hook is used in the right place. useMemo returns a memoized value.
+          </p>
+        </div>
       </div>
     </section>
   );
