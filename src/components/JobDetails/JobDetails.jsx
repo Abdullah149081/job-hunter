@@ -25,7 +25,7 @@ const JobDetails = () => {
 
   useEffect(() => {
     if (jobs) {
-      const findJob = jobs.find((job) => job.id === detail.Id);
+      const findJob = jobs.find((job) => job.id === detail.id);
       setDetails(findJob);
     }
   }, []);

@@ -6,7 +6,7 @@ const AppliedDetails = ({ applied }) => {
   const { id, company_logo, job_title, company_name, remote_or_onsite, fulltime_or_parttime, salary, location } = applied;
   const navigate = useNavigate();
   const handlerJobDetails = () => {
-    navigate(`/jobDetails/${id}`);
+    navigate(`/job/${id}`);
   };
 
   return (
