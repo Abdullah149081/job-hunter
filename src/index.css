@@ -17,6 +17,15 @@
 .remote_or_fulltime {
   @apply border border-indigo-500 rounded px-4 py-2 mr-4;
 }
-.location_salary{
-  @apply inline-flex justify-center items-center gap-4
+.location_salary {
+  @apply inline-flex justify-center items-center gap-4;
+}
+.chef-footer :hover {
+  font-weight: 500;
+  color: #a855f7;
+}
+.chef-footer {
+  cursor: pointer;
+  font-weight: 600;
+  color: #fffff5b2;
 }

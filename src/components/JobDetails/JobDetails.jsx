@@ -11,16 +11,14 @@ const JobDetails = () => {
   const jobs = useLoaderData();
   const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, phone, email, location, id } = details;
 
-  const setLocalStorage = (id) => {
-    const existsApplied = getShoppingCart();
-
-    for (const job in existsApplied) {
-      if (job === id) {
-        toast.error("You have already applied for this job", { duration: 1000 });
-      }
+  const handleAddToDb = (id) => {
+    const appliedData = getShoppingCart();
+    if (id in appliedData) {
+      toast.error("Already Applied!");
+    } else {
+      addToDb(id);
+      toast.success("Applied Successfully!");
     }
-
-    addToDb(id);
   };
 
   useEffect(() => {
@@ -77,7 +75,7 @@ const JobDetails = () => {
             </p>
           </div>
 
-          <button onClick={() => setLocalStorage(id)} className="btn">
+          <button onClick={() => handleAddToDb(id)} className="btn">
             Apply Now
           </button>
         </div>
